@@ -1,10 +1,12 @@
 {
-  "name": "electron-quick-start",
+  "name": "server-desk",
   "version": "1.0.0",
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "rebuild": "npm rebuild --runtime=electron --target=4.2.12 --disturl=https://atom.io/download/atom-shell --abi=48",
+    "build:mac": "electron-packager . --overwrite --platform=darwin --arch=x64"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -17,6 +19,20 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^7.1.1"
+    "electron-rebuild": "^1.8.6"
+  },
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-react": "^6.24.1",
+    "electron": "^4.2.12",
+    "express": "^4.17.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-router-dom": "^5.1.2",
+    "robotjs": "^0.5.1",
+    "serialport": "^8.0.5",
+    "tableify": "^1.1.0"
   }
 }

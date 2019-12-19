@@ -1,16 +1,52 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <meta charset="UTF-8" />
+    <title>Marce Deck</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+    <style>
+      body{
+        height: 800;
+        width: 600;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      .container{
+        width: 800;
+        height: 600;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      #qrcode {
+        margin-top: 25px;
+        position: relative;
+
+      }
+      
+    </style>
+    <h1>Marce Deck</h1>
+    <!-- Estas usando Node.js <span id="node-version"></span>, Chromium
+    <span id="chrome-version"></span>, y Electron
+    <span id="electron-version"></span>.  -->
+
+    Tu ip es <span id="ip"></span>
+
+    <h4>Escanea el codigo con la app</h4>
+    <div class="container">
+    <div id="qrcode"></div>
+    <div>
+    <div id="error"></div>
+    <div id="ports"></div>
 
     <!-- You can also require other files to run in this process -->
     <script src="./renderer.js"></script>
+    <script src="./jquery.min.js"></script>
+    <script src="./qrcode.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>
