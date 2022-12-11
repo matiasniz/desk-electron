@@ -27,7 +27,7 @@
     "babel-core": "^6.26.3",
     "babel-preset-react": "^6.24.1",
     "electron": "^4.2.12",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-router-dom": "^5.1.2",
